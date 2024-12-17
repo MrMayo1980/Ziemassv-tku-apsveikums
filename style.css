@@ -1,0 +1,131 @@
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002b5b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    background: linear-gradient(145deg, #ff4e50, #f9d423);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+.santa-head {
+    position: relative;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+}
+
+.santa-face {
+    background-color: #fddbb0;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.santa-hat {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    width: 80px;
+    height: 50px;
+    background-color: #d00000;
+    border-radius: 80px 80px 0 0;
+    z-index: 2;
+}
+
+.santa-hat::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 90px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.santa-hat::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.santa-beard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+}
+
+.santa-eyes {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.santa-eye {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.santa-nose {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #e57373;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sparkle {
+    animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        color: #ffe234;
+    }
+    50% {
+        color: #fff;
+    }
+}
+</style>
